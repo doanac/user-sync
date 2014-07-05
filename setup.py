@@ -9,7 +9,7 @@ setup(
     author_email='doanac@beadoan.com',
     description='''A tool to synchronize local user accounts with SSH keys
                 and teams define in launchapd or github''',
-    long_description=open('README.rst').read(),
+    long_description=open('README.md').read(),
     packages=['usersync'],
     include_package_data=True,
     entry_points={
