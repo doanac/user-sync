@@ -1,0 +1,15 @@
+Source: user-sync
+X-Python3-Version: >= 3.4
+XS-Testsuite: autopkgtest
+Priority: extra
+Maintainer: Andy Doan <doanac@beadoan.com>
+Build-Depends: debhelper (>= 9.0.0),
+               python3 (>= 3.4),
+Standards-Version: 3.9.5
+
+Package: user-sync
+Section: admin
+Architecture: all
+Depends:
+ ${python3:Depends},
+Description: A tool to synchronize local user accounts with SSH keys and teams define in launchapd or github

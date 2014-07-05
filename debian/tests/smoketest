@@ -1,0 +1,11 @@
+#!/bin/sh
+# Run a simple dry run test
+
+set -e
+cfg=$(mktemp)
+trap "rm $cfg" EXIT TERM
+cat >$cfg <<EOF
+team: utah
+EOF
+
+user-sync --dryrun --config $cfg
